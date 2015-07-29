@@ -132,24 +132,25 @@ public class Tokeniser {
 	static String CleanStr(String text){
 		String str = text;
 		
-		str = str.replace("`", "");
-		str = str.replace("~", "");
-		str = str.replace("!", "");
-		str = str.replace("@", "");
-		str = str.replace("#", "");
-		str = str.replace("$", "");
-		str = str.replace("%", "");
-		str = str.replace("^", "");
-		str = str.replace("<html>", "");
-		str = str.replace("</html>", "");
-		str = str.replace("<pre>", "");
-		str = str.replace("</pre", "");
-		str = str.replace("<", "");
-		str = str.replace(">", "");
+		str = str.replace("`", " ");
+		str = str.replace("~", " ");
+		str = str.replace("!", " ");
+		str = str.replace("@", " ");
+		str = str.replace("#", " ");
+		str = str.replace("$", " ");
+		str = str.replace("%", " ");
+		str = str.replace("^", " ");
+		str = str.replace("<html>", " ");
+		str = str.replace("</html>", " ");
+		str = str.replace("<pre>", " ");
+		str = str.replace("</pre>", " ");
+		str = str.replace("<", " ");
+		str = str.replace(">", " ");
 		str = str.replace(",", " ");
 		str = str.replace(".", " ");
 		str = str.replace("/", " ");
-		str = str.replace("", "");
+		str = str.replace(")", " ");
+		str = str.replace("("," ");
 		str = str.replace("-", "");
 		str = str.replace("_", "");
 		str = str.replace("=", "");
@@ -161,7 +162,10 @@ public class Tokeniser {
 		str = str.replace("+", "");
 		str = str.replace("=", "");
 		str = str.replace("\t"," ");
-		
+		str = str.replace("{"," ");
+		str = str.replace("}"," ");
+		str = str.replace("["," ");
+		str = str.replace("]"," ");
 		return str;
 	}
 	
